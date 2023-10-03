@@ -27,15 +27,19 @@ export const useAutoComplete = (
 
   const filterOptions = useCallback(
     debounce(async (inputValue: string) => {
-      if (inputValue.trim() === '') {
-        setSuggestions([]);
-        return;
-      }
+      try {
+        if (inputValue.trim() === '') {
+          setSuggestions([]);
+          return;
+        }
 
-      const filteredData = await autoCompleteData.filter((item) =>
-        item.text.toLowerCase().includes(inputValue.toLowerCase()),
-      );
-      setSuggestions(filteredData);
+        const filteredData = await autoCompleteData.filter((item) =>
+          item.text.toLowerCase().includes(inputValue.toLowerCase()),
+        );
+        setSuggestions(filteredData);
+      } catch (error) {
+        console.error(error);
+      }
     }, 300),
     [autoCompleteData],
   );
