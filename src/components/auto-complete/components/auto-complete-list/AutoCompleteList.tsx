@@ -3,6 +3,7 @@ import './auto-complete-list.css';
 import { FC } from 'react';
 
 import { IAutoCompleteListProps } from '../../models';
+import { getHighlightedText } from './utils/get-highlighted-text';
 
 export const AutoCompleteList: FC<IAutoCompleteListProps> = ({
   listItems,
@@ -10,6 +11,7 @@ export const AutoCompleteList: FC<IAutoCompleteListProps> = ({
   onMouseHover,
   onMouseLeave,
   selectedIndex,
+  inputValue,
 }) => {
   return (
     <>
@@ -35,7 +37,7 @@ export const AutoCompleteList: FC<IAutoCompleteListProps> = ({
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                {item.text}
+                {getHighlightedText(item.text, inputValue)}
               </li>
             );
           })}

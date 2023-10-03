@@ -31,6 +31,7 @@ export const AutoComplete: FC<IAutoCompleteProps> = ({ autoCompleteData }) => {
         onMouseHover={onMouseHover}
         onMouseLeave={onMouseLeave}
         selectedIndex={selectedIndex}
+        inputValue={inputValue}
       />
     </div>
   );

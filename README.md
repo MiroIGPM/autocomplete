@@ -8,30 +8,23 @@ I found out about Vite and I wanted to have a boilerplate for the technologies t
 
 ## Installation
 
-Clone the repo and run `yarn install`
-
-or Run command
-
-```
-npx degit TheSwordBreaker/vite-reactts-eslint-prettier project-name
-```
+Clone the repo and run `yarn install` or if you are using npm run `npm install`.
 
 ## Start
 
-After the successfull installation of the packages: `yarn dev`
+After the successfull installation of the packages: `npm run dev` or if you are using yarn use: `yarn dev`.
 
-## Steps in Vscode
+Navigate to http://localhost:3000/ or other localhost port if you have started your server on that port.
 
-#### (works with better with this template)
+## Project explanation
 
-1. Install Eslint and prettier extension for vs code.
-2. Make Sure Both are enabled
-3. Make sure all packages are Installed. (Mostly Eslint and prettier in node_modules)
-4. Enable formatOnSave of vs code
-5. Open a .tsx file and check if the bottom right corners of vs code have Eslint and Prettier with a double tick
+For the project, I used https://jsonplaceholder.typicode.com/ to fetch some resources for displaying the data in the component.
 
-![Screenshot (253)_LI](https://user-images.githubusercontent.com/52120562/162486286-7383a737-d555-4f9b-a4dd-c4a81deb7b96.jpg)
+As I did not want to overstep the suggested time for the assignment, there are some things that I did not include in the project that would be beneficial.
 
-If Everything is Good Then It Should Work, but let me new if something else happens
-
-Made with ❤️ by theSwordBreaker(we Destory all types of sword ⚡)
+Unit tests
+Storybook
+Applying CSS preprocessors like sass
+Covering some edge cases
+Add accessibility coverage.
+And applying some better styles

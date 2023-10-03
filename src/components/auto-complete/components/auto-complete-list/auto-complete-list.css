@@ -1,18 +1,18 @@
 .auto-complete-list {
-    border: 1px solid #D3D3D3;
-    border-radius: 10px;
-    width: 100%;
-    list-style: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  width: 100%;
+  list-style: none;
 }
 
 .auto-complete-list-item {
-    padding: 10px;
+  padding: 10px;
 }
 
 .auto-complete-list-item:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .highlighted {
-    background-color: #d8f9ff;
+  background-color: #d8f9ff;
 }

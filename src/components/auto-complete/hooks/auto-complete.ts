@@ -27,6 +27,11 @@ export const useAutoComplete = (
 
   const filterOptions = useCallback(
     debounce(async (inputValue: string) => {
+      if (inputValue.trim() === '') {
+        setSuggestions([]);
+        return;
+      }
+
       const filteredData = await autoCompleteData.filter((item) =>
         item.text.toLowerCase().includes(inputValue.toLowerCase()),
       );

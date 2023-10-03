@@ -4,6 +4,7 @@ export interface IAutoCompleteListProps {
   onMouseHover: (index: number) => void;
   onMouseLeave: () => void;
   selectedIndex: number;
+  inputValue: string;
 }
 
 interface IListItems {
