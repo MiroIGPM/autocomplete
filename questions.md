@@ -49,7 +49,7 @@ setState is async because it is better for performance because it minimises the 
 -Change the definition from a Class to functional component
 -Use the useState hook to handle the state that was being used in the class component
 -Switch lifecycle methods to useEffect hooks
--remove the render method and swich it to just use the return 
+-remove the render method and swich it to just use the return
 
 10. List a few ways styles can be used with components.
 
@@ -60,4 +60,4 @@ A couple of ways that we can use styles with the components are: 
 -we can use CSS modules which are good for keeping class names uniqe
 
 11. How to render an HTML string coming from the server.
-First we would need to validate and sanitise the string and the use the dangerouslySetInnerHTML for actually rendering the HTML string.
+    First we would need to validate and sanitise the string and the use the dangerouslySetInnerHTML for actually rendering the HTML string.

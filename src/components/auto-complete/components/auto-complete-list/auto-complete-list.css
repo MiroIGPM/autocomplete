@@ -3,6 +3,14 @@
   border-radius: 10px;
   width: 100%;
   list-style: none;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.auto-complete-list::-webkit-scrollbar {
+  padding: 0;
+  width: 0;
+  margin: 0;
 }
 
 .auto-complete-list-item {

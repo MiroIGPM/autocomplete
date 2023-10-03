@@ -11,6 +11,7 @@ export interface IAutoCompleteHook {
   selectedIndex: number;
   onMouseHover: (index: number) => void;
   onMouseLeave: () => void;
+  clearInputValue: () => void;
 }
 
 export enum Keys {

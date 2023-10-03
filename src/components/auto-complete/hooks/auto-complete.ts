@@ -83,6 +83,11 @@ export const useAutoComplete = (
     setSelectedIndex(-1);
   };
 
+  const clearInputValue = () => {
+    setInputValue('');
+    setSuggestions([]);
+  };
+
   return {
     inputValue,
     onInputChange,
@@ -92,5 +97,6 @@ export const useAutoComplete = (
     selectedIndex,
     onMouseHover,
     onMouseLeave,
+    clearInputValue,
   };
 };

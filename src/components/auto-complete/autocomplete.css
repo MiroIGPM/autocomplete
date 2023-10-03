@@ -8,3 +8,9 @@
   max-width: 550px;
   color: #555555;
 }
+
+.auto-complete-inp-btn {
+  display: flex;
+  padding: 5px;
+  max-height: 40px;
+}
